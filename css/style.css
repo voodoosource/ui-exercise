@@ -6724,61 +6724,12 @@ button.close {
 .bg-dark {
   background-color: #343a40;
 }
-footer {
-  border: 1px dotted red;
-  height: 15em;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  footer {
-    float: left;
-    width: 100%;
-  }
-}
-article {
-  /**
-  You asked for a 70% width sidebar, but, as Im using a 12 column grid system I have rounded it to 8 columns wide
- **/
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: 1px dotted green;
-  height: 15em;
-}
-@media (min-width: 992px) {
-  article {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-aside {
-  /**
-  You asked for a 30% width sidebar, but, as Im using a 12 column grid system I have rounded it to 4 columns wide
-   **/
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: 1px dotted yellow;
-  height: 15em;
-}
-@media (min-width: 992px) {
-  aside {
-    float: left;
-    width: 33.33333333%;
-  }
-}
 body {
   padding: 0px;
   margin: 0px;
 }
 header {
-  border: 1px dotted red;
-  height: 15em;
+  padding: 2em;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -6820,4 +6771,67 @@ nav.navbar a.nav-link {
     float: left;
     width: 16.66666667%;
   }
+}
+footer {
+  border: 1px dotted red;
+  height: 15em;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  footer {
+    float: left;
+    width: 100%;
+  }
+}
+article {
+  /**
+  You asked for a 70% width sidebar, but, as Im using a 12 column grid system I have rounded it to 8 columns wide
+ **/
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px dotted green;
+}
+@media (min-width: 992px) {
+  article {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+aside {
+  /**
+  You asked for a 30% width sidebar, but, as Im using a 12 column grid system I have rounded it to 4 columns wide
+   **/
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px dotted yellow;
+  height: 15em;
+}
+@media (min-width: 992px) {
+  aside {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+div.pod {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 2em;
+}
+@media (min-width: 992px) {
+  div.pod {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+div.pod img {
+  max-width: 100%;
 }

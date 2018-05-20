@@ -31,15 +31,16 @@ Set the width of the content section to 70% and the sidebar section to 30%. The 
 <body>
 
 <header>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="" >
 
+
+    <nav class="navbar navbar-dark bg-dark">
                 <a class="nav-item nav-link active" href="/">Home</a>
                 <a class="nav-item nav-link" href="/about">About</a>
                 <a class="nav-item nav-link" href="/blog">Blog</a>
-
-        </div>
     </nav>
+    <div id="buttondiv">
+       <a class="btn btn-primary" data-toggle="collapse" href="#sidebarcollapse" >SideBar</a>
+    </div>
 </header>
 
 
@@ -78,23 +79,37 @@ Set the width of the content section to 70% and the sidebar section to 30%. The 
         <p>Helping the world's largest water technology provider solve the global waster crisis through Business Transformation</p>
     </div>
 </article>
-<aside></aside>
+
+<aside class="collapse" id="sidebarcollapse">
+
+    <h3>This is a sidebar</h3>
+<p>Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+<p>Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+</aside>
 
 
 
 
 
 
-<footer></footer>
+<footer>
+    <h3>Footer</h3>
+    <p>Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+</footer>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<!--
+I have used a different Jquery version to that specified, this is due to the requested version not supporting the bootstrap collapse methods particularly well.
+If i were to do this again and the requested version was no negotiable, I would simply write a function for this myself ...
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!--
 NOTE
 I'm not sure why you want me to include this file, perhaps you intended me to write my css in there?
 I've created the empty file just to avoid a 404 on the request, Apologies if i've missed the point here
 -->
 <script src="js/test.js"></script>
+
+<script src="bootstrap/js/transition.js"></script>
 <script src="bootstrap/js/collapse.js"></script>
 </body>
 </html>

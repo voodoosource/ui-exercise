@@ -1,0 +1,22 @@
+
+@import 'style.less';
+
+body{
+  padding:0px;
+  margin:0px;
+}
+header{
+  border:1px dotted red;
+  height: 15em;
+  .make-md-column(12);
+}
+
+nav.navbar{
+  .make-md-column(6);
+  .make-md-column-offset(3);
+  padding:1em;
+  a.nav-link{
+    color:@light-color;
+    .make-sm-column(2);
+  }
+}
